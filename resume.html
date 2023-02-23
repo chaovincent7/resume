@@ -11,9 +11,11 @@
     <body>
 
         <div class="navbar"> 
-            <a href="">About Me</a>
-            <a href="">Experience</a>
-            <a href="">Contact</a>
+            <a href="#About Me">About Me</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
         </div>
 
         <div class="About Me"> 
@@ -25,18 +27,64 @@
             <p>Outside of my coding work my volunteer work consists of helping out at my local Buddhist temple where I helped with setting up the festivities, some translation work, manual labor and babysitting small children. I also have 100+ hrs at my community library where I helped children to the elderly find what they need, checking out books, checking in books and making sure said books go back on the appropriate shelf.</p>
         </div>
 
-        <div class="Experience">
+        <div class="Experience" id="Experience">
             <h1>Experience</h1>
+            <!-- Create a date for Position, place, start and end date-->
         </div>
 
-        <div class="Projects">
+        <div class="Projects" id="Projects">
             <h1>Projects</h1>
+            <!-- Create a list for the projects that you have done-->
+            <ol>
+                <li>Fancy Inventory Orderer - <i>Inventory Manager</i></li>
+                    <ul>
+                        <li>Created landing page, signed in page and created items page using React and JavaScript.</li>
+                        <li>Utilized use statements to check for user's name and password within the MySQL database.</li>
+                        <li>Used APIs that allowed for item createion, deletion and updating and would store the information changed in a table for users to see.</li>
+                    </ul>
+
+                <li>Metor Smash - <i>Smash Bros Wiki</i></li>
+                    <ul>
+                        <li>Met deadlines by workign in an agile-like manner with weekly check-ups to review and finalize details on the Wiki.</li>
+                        <li>Made use of Bootstrap 5 to not only help with the layout for mobile devices but also the design for web and tablets.</li>
+                        <li>Increased self learning of HTML by designing main page and select character pages.</li>
+                    </ul>
+                
+                <li>Zombie Project - <i>Unity Survival Game</i></li>
+                    <ul>
+                        <li>Created the Menu UI and In-Game UI to display and deplete player hunger over time and health when hit by a zombie.</li>
+                        <li>Assisted in world building by making use of Unity's building tools to create city environment.</li>
+                        <li>Integrated other developer's code using GitHub to initalize player and zombie movements.</li>
+                    </ul>
+
+                <li>Jump Runner - <i>Endless Runner Game</i></li>
+                    <ul>
+                        <li>Increased knowledge of Unity's animation and programming practices with help of online sources.</li>
+                        <li>Applied GitHub for version control and to perform code reviews with project manager.</li>
+                        <li>Created C# script for player movements while operating with the Unity game engine.</li>
+                    </ul>
+            </ol>
         </div>
 
-        <div class="Contact">
+        <div class="Skills" id="Skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Springboot</li>
+                <li>React</li>
+                <li>HTML</li>
+                <li>AWS</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="Contact" id="Contact">
+            <h1>Contact</h1>
             <form action="./success.html" method="get" target="_blank"></form>
                 <fieldset>
-                    <legend>Contact Me</legend>
+                    <legend>Contact Form</legend>
                     <label for="name-input">Name</label>
                     <input type="text" name="name" id="name-input" placeholder="Your Name Here">
 
