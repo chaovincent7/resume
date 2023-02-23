@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<!-- All subseqeunt HTML is contained within the <html> element -->
 <html lang="en">
-    <!-- Out Meta Data (setup) for this page goes in <Head> -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="resume.css">
         <title>Chao's Resume</title>
-    </head>
-    <!-- All DOM data to be rendered / displayed is in the <body> -->
-    <body>
         
+    </head>
+    <body>
+
+        <div class="navbar"> 
+            <a href="">About Me</a>
+            <a href="">Experience</a>
+            <a href="">Contact</a>
+        </div>
+
+        <div class="About Me"> 
+            <img src="./imgs/241390140_663372607970774_2891431752030406785_n.jpg">
+            <a href="https://www.linkedin.com/in/vincent-chao-37921b140/">LinkedIn</a>
+            <a href="https://github.com/chaovincent7">GitHub</a>
+            <p>I have graduated from the University of Texas at San Antonio with a Bachelor of Science in Computer Science degree in May of 2022. I am striving to learn more and develop my skills as a front-end web developer, honing my individual skills in UI/UX but I am also interested in learning about other concentrations outside my field such as IT, Cyber Security or Game Development.</p>
+            <p>Outside of my coursework, I have worked on my resume website where I used HTML, CSS and JavaScript to create a website that displays what my resume has on it. I have also collaborated in different projects such as my Smash Bros Ultimate Wiki and my attendance at Rowdy Hack where I created a server to hold songs and those songs would be then downloaded from the server onto an app that my team and I created. I have also mostly self-taught myself Unity, creating the UI/UX in the zombie survival game as well as creating an 2D endless runner.</p>
+            <p>Outside of my coding work my volunteer work consists of helping out at my local Buddhist temple where I helped with setting up the festivities, some translation work, manual labor and babysitting small children. I also have 100+ hrs at my community library where I helped children to the elderly find what they need, checking out books, checking in books and making sure said books go back on the appropriate shelf.</p>
+        </div>
+
+        <div class="Experience">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="Projects">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="Contact">
+            <form action="./success.html" method="get" target="_blank"></form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label for="name-input">Name</label>
+                    <input type="text" name="name" id="name-input" placeholder="Your Name Here">
+
+                    <label for="name-input">Email</label>
+                    <input type="text" name="email" id="email-input" placeholder=" Your Email Here">
+
+                    <label for="name-input">Your Message</label>
+                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
     </body>
 </html>
