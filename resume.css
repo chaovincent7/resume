@@ -1,5 +1,125 @@
-img{
-    height: 15%;
-    width: 15%;
-    border-radius: 200px;
+body{
+    font-family: SST;
+    background-color: #d9d9d9;
+    color: black;
 }
+
+h1{
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    padding: 15px;
+    display: block;
+    background-color:#686b73;
+}
+
+.navbar a{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/*About me section */
+.AboutMe{
+    display: flex;
+    float: left;
+}
+
+.mypic{
+    width: 9%;
+    text-align: center;
+    padding: 10px;
+}
+
+.social{
+    width: 2%;
+    padding-top: 60px;
+}
+
+.intro{
+    width: 89%;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+
+img{
+    border-radius: 50%;
+    width: 10%;
+}
+
+/* Skills section*/
+
+.skills{
+    margin: auto;
+}
+
+th{
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding: 18px
+}
+
+/* Experience */
+.experience{
+    margin: auto;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    border: 1px solid red;
+    background-color: transparent;
+    width: 500px;
+    height: 230px;
+    border: 1px solid black;
+    perspective: 1000px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* Projects */
+  
