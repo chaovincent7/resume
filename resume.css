@@ -72,9 +72,6 @@ th{
 }
 
 /* Experience */
-.experience{
-    margin: auto;
-}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     border: 1px solid red;
@@ -88,38 +85,60 @@ th{
   }
   
   /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    transition: transform 0.8s;
+.container {
+	display: flex;
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+    perspective: 1000px;
+    border: 1px solid black;
+}
+
+.card {
+	position: relative;
+	width: 30rem;
+	height: 15rem;
+	margin: 0.5rem;
+	text-align: center;
+	line-height: 8rem;
+	color: #ecf0f1;
+	border-radius: 0.8rem;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
-  }
+}
+
+.face {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.8rem;
+	background-size: cover;
+	background-position: center center;
+	backface-visibility: hidden;
+	transition: transform 0.5s ease-in-out;
+}
+
+.face--front {
+	background: #FFFFFF;
+	font-size: 3rem;
+}
+
+.face--back {
+	font-size: 1.5rem;
+	transform: rotateY(180deg);
+}
+
+.card:hover .face--front {
+	transform: rotateY(-180deg);
+}
+
+.card:hover .face--back {
+	transform: rotateY(0deg);
+}
 
   /* Projects */
   
+
