@@ -12,15 +12,15 @@
 
         <div class="navbar"> 
             <a href="#AboutMe" class="nav">About Me</a>
-            <a href="#Experience" class="nav">Experience</a>
-            <a href="#Projects" class="nav">Projects</a>
-            <a href="#Skills" class="nav">Skills</a>
-            <a href="#Contact" class="nav">Contact</a>
+            <a href="#experience" class="nav">Experience</a>
+            <a href="#projects" class="nav">Projects</a>
+            <a href="#contact" class="nav">Contact</a>
         </div>
 
+        <h1>INTRODUCTION</h1>
         <div class="AboutMe">
             <div class="mypic"> 
-                <img src="./imgs/241390140_663372607970774_2891431752030406785_n.jpg" style="width: 11em; height: 14em;">
+                <img src="./imgs/241390140_663372607970774_2891431752030406785_n.jpg" style="width: 11em; height: 14em; border-radius: 50%;">
             </div>
             <div class="social">
                 <a href="https://www.linkedin.com/in/vincent-chao-37921b140/"><img src="./imgs/linkedin.png" style="width: 2.5em; height: 2.5em;"></a>
@@ -49,81 +49,56 @@
             </thead>
         </table>
 
-        <div class="experience">
-            <h1>Experience</h1>
+        <div class="experience" id="experience">
+            <h1>EXPERIENCE</h1>
 
-            <div class="container">
-                <div class="card">
-                    <div class="face face--front">
-                        <img src="/imgs/cognixia.png" style="width: 30rem; height: 15rem; border-radius:0;">
-                    </div>
-                    <div class="face face--back">facebook</div>
+        <h1>PROJECTS</h1>
+        <div class="projects" id="projects">
+            <div class="pcontainer">
+                <div class="box">
+                    <span>Fancy Inventory Orderer</span>
+                  <img src="/resume/imgs/project1.jpg">
+                  <div class="testr">Test</div>
                 </div>
 
-                <div class="card">
-                    <div class="face face--front">
-                        <img src="/imgs/sba.jpg" style="width: 30rem; height: 15rem; border-radius:0;">
-                    </div>
-                    <div class="face face--back">twitter</div>
+                <div class="box">
+                    <span>Metor Smash</span>
+                  <img src="/resume/imgs/project2.png">
+                  <div></div>
                 </div>
+
+                <div class="box">
+                    <span>Zombie Project</span>
+                  <img src="/resume/imgs/project3.jpg">
+                </div>
+
+                <div class="box">
+                    <span>Jump Runner</span>
+                  <img src="/resume/imgs/project4.png"> 
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="contactcontainer">
+                <h1>CONTACT ME</h1>
+                <form action="action_page.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter Name Here">
+            
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter Your Email">
+            
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Enter Your Message" style="height:100px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+                </form>
             </div>
         </div>
-
-        <div class="Projects" id="Projects">
-            <h1>Projects</h1>
-            <ol>
-                <li>Fancy Inventory Orderer - <i>Inventory Manager</i></li>
-                    <ul>
-                        <li>Created landing page, signed in page and created items page using React and JavaScript.</li>
-                        <li>Utilized use statements to check for user's name and password within the MySQL database.</li>
-                        <li>Used APIs that allowed for item createion, deletion and updating and would store the information changed in a table for users to see.</li>
-                    </ul>
-                <br>
-
-                <li>Metor Smash - <i>Smash Bros Wiki</i></li>
-                    <ul>
-                        <li>Met deadlines by workign in an agile-like manner with weekly check-ups to review and finalize details on the Wiki.</li>
-                        <li>Made use of Bootstrap 5 to not only help with the layout for mobile devices but also the design for web and tablets.</li>
-                        <li>Increased self learning of HTML by designing main page and select character pages.</li>
-                    </ul>
-                <br>
-
-                <li>Zombie Project - <i>Unity Survival Game</i></li>
-                    <ul>
-                        <li>Created the Menu UI and In-Game UI to display and deplete player hunger over time and health when hit by a zombie.</li>
-                        <li>Assisted in world building by making use of Unity's building tools to create city environment.</li>
-                        <li>Integrated other developer's code using GitHub to initalize player and zombie movements.</li>
-                    </ul>
-                <br>
-
-                <li>Jump Runner - <i>Endless Runner Game</i></li>
-                    <ul>
-                        <li>Increased knowledge of Unity's animation and programming practices with help of online sources.</li>
-                        <li>Applied GitHub for version control and to perform code reviews with project manager.</li>
-                        <li>Created C# script for player movements while operating with the Unity game engine.</li>
-                    </ul>
-                <br>
-            </ol>
-        </div>
-
-        <div class="Contact" id="Contact">
-            <h1>Contact</h1>
-            <form action="./success.html" method="get" target="_blank"></form>
-                <fieldset>
-                    <legend>Contact Form</legend>
-                    <label for="name-input">Name</label>
-                    <input type="text" name="name" id="name-input" placeholder="Your Name Here">
-
-                    <label for="name-input">Email</label>
-                    <input type="text" name="email" id="email-input" placeholder=" Your Email Here">
-
-                    <label for="name-input">Your Message</label>
-                    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
-
-                    <button>Submit</button>
-                </fieldset>
-            </form>
-        </div>
-
     </body>
 </html>
