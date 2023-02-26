@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <link rel="stylesheet" href="resume.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Chao's Resume</title>
         
     </head>
     <body>
+        <div class="w3-bar w3-light-grey">
+            <a href="#AboutMe" class="w3-bar-item w3-button">ABOUT ME</a>
+            <a href="#experience" class="w3-bar-item w3-button">EXPERIENCE</a>
+            <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+          </div>
 
-        <div class="navbar"> 
-            <a href="#AboutMe" class="nav">About Me</a>
-            <a href="#experience" class="nav">Experience</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#contact" class="nav">Contact</a>
-        </div>
-
-        <h1>INTRODUCTION</h1>
+        <h1 id="AboutMe">INTRODUCTION</h1>
         <div class="AboutMe">
             <div class="mypic"> 
                 <img src="./imgs/241390140_663372607970774_2891431752030406785_n.jpg" style="width: 11em; height: 14em; border-radius: 50%;">
@@ -49,40 +49,54 @@
             </thead>
         </table>
 
-        <div class="experience" id="experience">
-            <h1>EXPERIENCE</h1>
-
-        <h1>PROJECTS</h1>
-        <div class="projects" id="projects">
-            <div class="pcontainer">
-                <div class="box">
-                    <span>Fancy Inventory Orderer</span>
-                  <img src="/resume/imgs/project1.jpg">
-                  <div class="testr">Test</div>
+        <h1 id="experience">EXPERIENCE</h1>
+        <div class="expcontainer">
+            <div class="container">
+                <img src="/imgs/cognixia.png" class="image" style="width: 50em; height: 25em;">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
                 </div>
+              </div>
 
-                <div class="box">
-                    <span>Metor Smash</span>
-                  <img src="/resume/imgs/project2.png">
-                  <div></div>
-                </div>
-
-                <div class="box">
-                    <span>Zombie Project</span>
-                  <img src="/resume/imgs/project3.jpg">
-                </div>
-
-                <div class="box">
-                    <span>Jump Runner</span>
-                  <img src="/resume/imgs/project4.png"> 
+              <div class="container">
+                <img src="/imgs/sba.jpg" class="image" style="width: 50em; height: 25em;">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
                 </div>
               </div>
         </div>
+
+        <h1 id="projects">PROJECTS</h1>
+        <div class="projects">
+            <div class="pcontainer">
+                <div class="box">
+                  <img src="./imgs/project1.jpg">
+                  <span>Fancy Inventory Orderer</span>
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div class="box">
+                  <img src="/imgs/project2.png">
+                  <span>Metor Smash</span>
+                </div>
+
+                <div class="box">
+                  <img src="/imgs/project3.jpg">
+                  <span>Zombie Project</span>
+                </div>
+
+                <div class="box">
+                  <img src="/imgs/project4.png"> 
+                  <span>Jump Runner</span>
+                </div>
+              </div>
+            </div>
         </div>
 
-        <div class="contact" id="contact">
+        <div class="contact">
             <div class="contactcontainer">
-                <h1>CONTACT ME</h1>
+                <h1 id="contact">CONTACT ME</h1>
                 <form action="action_page.php">
             
                 <label for="fname">First Name</label>
